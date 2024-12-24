@@ -1,0 +1,8 @@
+services:
+    mazeltof.proflatmodenvariations.listener:
+        class: mazeltof\proflatmodenvariations\event\listener
+        arguments:
+            - '@user'
+            - '@template'
+        tags:
+            - { name: event.listener }

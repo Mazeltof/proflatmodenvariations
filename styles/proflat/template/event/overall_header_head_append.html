@@ -1,0 +1,14 @@
+<meta name="color-scheme" content="light dark">
+{% INCLUDE 'config.html' %}
+<script>if (localStorage.proflatlightdark) document.documentElement.setAttribute("data-theme", localStorage.proflatlightdark);</script>
+{% if definition.SWITCH_COLOR %}
+<script>if (localStorage.proflatdeclinaisons) document.documentElement.setAttribute("data-color", localStorage.proflatdeclinaisons);</script>
+<style>
+{% for color in definition.COLORS %}
+    {% set escapedColor = color starts with '#' ? '\\' ~ color : color %}
+    [data-color="{{ escapedColor }}"] { --color01: {{ color }}; }
+    .switch-{{ escapedColor }}, .switch-{{ escapedColor }}:hover, .switch-{{ escapedColor }}:focus { color: {{ color }}; }
+{% endfor %}
+</style>
+{% endif %}
+<link rel="stylesheet" href="{ROOT_PATH}ext/mazeltof/proflatmodenvariations/styles/proflat/theme/proflatmodenvariations.css">
