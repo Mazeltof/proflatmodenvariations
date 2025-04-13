@@ -32,9 +32,7 @@ if (empty($lang) || !is_array($lang))
 // ’ « » “ ” …
 //
 $lang = array_merge($lang, [
-	'M_DARK'			=> 'Dark mode',
-	'M_LIGHT'			=> 'Light mode',
-	'M_LIGHT_DARK'		=> 'Light/Dark mode',
+	'M_LIGHT_DARK'			=> 'Light/Dark mode',
 	'MODE_SHORT'			=> 'Mode',
 	'VAR_COLOR'			=> 'Color variations',
 	'VARIAIONS_SHORT'		=> 'Variations',
