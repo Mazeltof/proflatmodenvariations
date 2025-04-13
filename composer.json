@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "adds proflat light-dark mode & proflat colors variations",
 	"homepage": "https://www.mazeland.fr/",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"license": "GPL-2.0",
 	"authors": [
         {
